@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>WatsNew | A Source for Pre-Enriched News Topics</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/stylesheets/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    <div id="splash">
+      <div class="container">
+        <h1 class='logo-text text-center'>WatsNew</h1>
+
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" id="search_text" name="search" placeholder="Ask about anything in the news..." class="main_inputs form-control">
+                  <span class="input-group-btn">
+                    <button id="search_btn" class="main_inputs btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="loader">
+      <div class="spinner">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+      </div>
+    </div>
+    <div class="results">
+      <div class="container listing">
+        
+      </div>
+
+      <canvas id="graph_diagram" width="1000" height="1000"></canvas>
+        
+      <div id="concept_holder"></div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="static/js/main.js"></script>
+    <script src="static/js/springy.js"></script>
+    <script src="static/js/springyui.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+  </body>
+
+</html>
